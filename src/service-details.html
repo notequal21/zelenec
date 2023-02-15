@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Service Details',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+
+      @@include('components/_modal-send.html')
+      @@include('components/_modal-call.html')
+      @@include('components/_modal-thanks.html')
+
+
+      @@include('pages/service/_breadcrumbs-details.html')
+      @@include('pages/service/_content-details.html')
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

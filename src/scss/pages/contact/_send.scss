@@ -1,0 +1,67 @@
+.contact-send {
+  margin: 60px 0;
+
+  @media (max-width: 767px) {
+    margin: 30px 0;
+  }
+
+  &__form {
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 40px;
+
+    @media (max-width: 767px) {
+      padding: 30px 20px;
+    }
+
+    &-body {
+      margin: 30px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      textarea {
+        padding: 43px 20px 29px !important;
+      }
+
+      label {
+        flex: 0 1 calc(50% - 15px);
+
+        &:not(:first-child) {
+          margin: 30px 0 0 30px;
+        }
+
+        &:nth-child(1) {
+          margin: 0;
+          flex: 1 1 100%;
+        }
+        &:nth-child(2) {
+          margin: 30px 0 0;
+        }
+
+        @media (max-width: 767px) {
+          flex: 1 1 100%;
+
+          &:not(:first-child) {
+            margin: 30px 0 0;
+          }
+        }
+      }
+    }
+    ._agree,
+    button {
+      margin: 30px 0 0;
+
+      @media (max-width: 767px) {
+        margin: 34px 0 0;
+      }
+    }
+
+    button {
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+}

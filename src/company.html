@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Company',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/_modal-send.html')
+      @@include('components/_modal-call.html')
+      @@include('components/_modal-thanks.html')
+
+      @@include('pages/company/_breadcrumbs.html')
+      @@include('pages/company/_content.html')
+      @@include('pages/company/_team.html')
+      @@include('pages/company/_advantages.html')
+      @@include('pages/contact/_send.html')
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+// -------- imports --------
+@import 'fonts';
+@import 'components/_fonts';
+@import 'components/_normalize.scss';
+@import 'components/_mixins.scss';
+@import 'components/_variables.scss';
+@import 'components/_variables.scss';
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+@import 'components/_ui.scss';
+@import 'components/_modal.scss';
+@import 'components/_agree.scss';
+@import 'pages/index/_main.scss';
+@import 'pages/index/_advantages.scss';
+@import 'pages/index/_types.scss';
+@import 'pages/index/_last.scss';
+@import 'pages/index/_partners.scss';
+@import 'pages/index/_mortgage.scss';
+@import 'pages/index/_blog.scss';
+@import 'pages/rent/_breadcrumbs.scss';
+@import 'pages/rent/_content.scss';
+@import 'pages/rent/_text.scss';
+@import 'pages/service/_content.scss';
+@import 'pages/blog/_content.scss';
+@import 'pages/contact/_content.scss';
+@import 'pages/contact/_card.scss';
+@import 'pages/contact/_send.scss';
+@import 'pages/notfound/_content.scss';
+@import 'pages/policy/_content.scss';
+@import 'pages/company/_content.scss';
+@import 'pages/company/_team.scss';
+@import 'pages/invest/_content.scss';
+@import 'pages/_ui/index.scss';
+
+@import './node_modules/swiper/swiper.scss';
+@import './node_modules/swiper/modules/pagination/pagination.scss';
+@import './node_modules/swiper/modules/navigation/navigation.scss';
+
+::selection {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+body {
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 500;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 134px 0 0;
+
+  @media (max-width: 991px) {
+    padding: 74px 0 0;
+  }
+}
+
+._sitemap {
+  min-height: 100vh;
+  padding: 0 0 50px;
+
+  &-con {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+      padding: 0 50px;
+    }
+  }
+  &-body {
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }
+
+        &:not(:first-child) {
+          margin: 15px 0 0;
+        }
+      }
+    }
+
+    &__item {
+      color: #000;
+      transition: all 0.3s;
+
+      &:hover {
+        color: rgb(134, 134, 134);
+      }
+    }
+  }
+}

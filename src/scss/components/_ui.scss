@@ -1,0 +1,254 @@
+h1 {
+  font-size: 40px;
+  line-height: 140%;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+    line-height: 140%;
+  }
+}
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 31px;
+  @media (max-width: 991px) {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+h3 {
+  font-size: 28px;
+  line-height: 27px;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 19px;
+  }
+}
+h4 {
+  font-size: 20px;
+  line-height: 19px;
+}
+h5 {
+  font-size: 18px;
+  line-height: 17px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 15px;
+  }
+}
+h6 {
+  font-size: 16px;
+  line-height: 15px;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #3f3e3d;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  background: #00b806;
+  border-radius: 30px;
+
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.4s ease;
+
+  @media (max-width: 767px) {
+    align-self: flex-start;
+  }
+  @media (max-width: 500px) {
+    align-self: unset;
+    display: flex !important;
+  }
+  @media (max-width: 360px) {
+    line-height: 120%;
+  }
+
+  &:hover {
+    background: #4dce51;
+  }
+
+  svg {
+    margin: 0 0 0 8px;
+  }
+
+  &_lg {
+    height: 52px;
+    padding: 0 30px;
+  }
+  &_md {
+    height: 44px;
+    padding: 0 30px;
+    font-size: 12px;
+    line-height: 11px;
+  }
+  &_border {
+    border: 2px solid #eaeaea;
+    background: transparent;
+
+    &:hover {
+      border: 2px solid #00b806;
+      background: #00b806;
+    }
+  }
+  &_more {
+    font-size: 14px;
+    line-height: 13px;
+    color: #3f3e3d;
+    background: transparent;
+    padding: 0;
+
+    svg {
+      path {
+        fill: #3f3e3d;
+        transition: all 0.4s ease;
+      }
+    }
+
+    &:hover {
+      color: #00b806;
+      background-color: transparent;
+
+      svg {
+        path {
+          fill: #00b806;
+        }
+      }
+    }
+  }
+  &_green {
+    border-color: #00b806;
+    color: #2b2a29;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  &_circle {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    svg {
+      margin: 0;
+    }
+  }
+}
+
+label {
+  .just-validate-error-label {
+    margin: 14px 0 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+    color: #e25f5f;
+  }
+  &._input {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      margin: 0;
+      flex: 1 1 100%;
+      display: block;
+
+      font-size: 14px;
+      line-height: 140%;
+      color: #6b6a6a;
+    }
+
+    span {
+      margin: 20px 0 0;
+      width: 100%;
+      display: block;
+      position: relative;
+      img {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        display: block;
+        width: 16px;
+        height: 16px;
+
+        opacity: 0;
+        transform: scale(0.6);
+        pointer-events: none;
+        transition: all 0.3s ease;
+      }
+      // &::after {
+      //   content: '';
+      //   position: absolute;
+      //   top: 18px;
+      //   right: 20px;
+      //   display: block;
+      //   width: 16px;
+      //   height: 16px;
+      //   background-image: url(../img/icons/x-red.svg);
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      //   background-position: center;
+
+      //   opacity: 0;
+      //   transform: scale(0.6);
+      //   pointer-events: none;
+      //   transition: all 0.3s ease;
+      // }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      // margin: 20px 0 0;
+      flex: 1 1 100%;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 13px;
+      transition: all 0.3s ease;
+      color: #3f3e3d;
+
+      height: 52px;
+      background: transparent;
+      padding: 0 20px;
+      border: 1px solid #d5d4d4;
+      border-radius: 10px;
+
+      &.just-validate-error-field {
+        border-color: #e25f5f;
+        padding: 0 46px 0 20px;
+        & + img {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      &::placeholder {
+        color: #a6a6a6;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        &::placeholder {
+          color: #6b6a6a;
+        }
+      }
+    }
+    textarea {
+      height: auto;
+      padding: 32px 20px 20px;
+      resize: none;
+    }
+  }
+}

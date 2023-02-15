@@ -1,0 +1,233 @@
+.team {
+  margin: 60px 0 0;
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    margin: 30px 0 0;
+  }
+
+  h3 {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .team-top_mobile {
+    display: none;
+
+    &-btns {
+      display: flex;
+    }
+
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        display: inline-block;
+      }
+      div {
+        &:nth-child(1) {
+          svg {
+            transform: scale(-1, 1);
+          }
+        }
+        &:not(:first-child) {
+          margin: 0 0 0 10px;
+        }
+
+        &.swiper-button-disabled {
+          background: #ffffff;
+          border: 1px solid #eaeaea;
+
+          svg {
+            path {
+              fill: #3f3e3d;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 0;
+    padding: 0 0 60px;
+
+    @media (max-width: 767px) {
+      margin: 34px 0 0;
+      padding: 0 0 30px;
+    }
+
+    @media (max-width: 767px) {
+      .swiper-slide {
+        .team-body__item {
+          transform: scale(0.8);
+          transition: all 0.5s ease;
+        }
+
+        &.swiper-slide-active {
+          .team-body__item {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .swiper-wrapper {
+        flex-wrap: wrap;
+      }
+      .swiper-slide {
+        height: unset !important;
+        min-height: 100% !important;
+        flex: 0 1 calc(25% - 15px);
+
+        &:not(:first-child) {
+          margin: 20px 0 0 20px;
+        }
+
+        &:nth-child(4n + 1) {
+          margin: 20px 0 0;
+        }
+
+        &:nth-child(1) {
+          margin: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin: 0 0 0 20px;
+        }
+
+        @media (max-width: 991px) {
+          flex: 0 1 calc(33.333% - 14px);
+
+          &:not(:first-child) {
+            margin: 20px 0 0 20px;
+          }
+
+          &:nth-child(3n + 1) {
+            margin: 20px 0 0;
+          }
+
+          &:nth-child(1) {
+            margin: 0;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin: 0 0 0 20px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          flex: 1 1 100%;
+          margin: 0 !important;
+        }
+      }
+    }
+    &__item {
+      // flex: 0 1 calc(25% - 15px);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px 50px;
+      background: #ffffff;
+      box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+
+      @media (max-width: 767px) {
+        padding: 20px;
+      }
+
+      // &:not(:first-child) {
+      //   margin: 20px 0 0 20px;
+      // }
+
+      // &:nth-child(4n + 1) {
+      //   margin: 20px 0 0;
+      // }
+
+      // &:nth-child(1) {
+      //   margin: 0;
+      // }
+
+      // &:nth-child(2),
+      // &:nth-child(3),
+      // &:nth-child(4) {
+      //   margin: 0 0 0 20px;
+      // }
+
+      // @media (max-width: 991px) {
+      //   flex: 0 1 calc(33.333% - 14px);
+
+      //   &:not(:first-child) {
+      //     margin: 20px 0 0 20px;
+      //   }
+
+      //   &:nth-child(3n + 1) {
+      //     margin: 20px 0 0;
+      //   }
+
+      //   &:nth-child(1) {
+      //     margin: 0;
+      //   }
+
+      //   &:nth-child(2),
+      //   &:nth-child(3) {
+      //     margin: 0 0 0 20px;
+      //   }
+      // }
+
+      // @media (max-width: 767px) {
+      //   flex: 1 1 100%;
+      //   margin: 0 !important;
+      // }
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @media (max-width: 1200px) {
+          width: 150px;
+          height: 150px;
+        }
+        @media (max-width: 991px) {
+          width: 180px;
+          height: 180px;
+        }
+        @media (max-width: 767px) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      h6 {
+        margin: 20px 0 0;
+        font-size: 16px;
+        line-height: 140%;
+      }
+      span {
+        margin: 10px 0 0;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+      }
+      p {
+        margin: 10px 0 0;
+        font-size: 14px;
+        line-height: 140%;
+        color: #3f3e3d;
+      }
+    }
+  }
+}

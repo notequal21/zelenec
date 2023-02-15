@@ -1,0 +1,139 @@
+.blog_page {
+  margin: 30px 0 60px;
+
+  @media (max-width: 767px) {
+    margin: 30px 0 32px;
+  }
+
+  &-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 0;
+
+    .blog-body__item {
+      flex-grow: 0;
+
+      &-img {
+        padding: 0 0 51.33%;
+
+        @media (max-width: 767px) {
+          padding: 0 0 57.972%;
+        }
+      }
+
+      &-date {
+        margin: 17px 0 0;
+      }
+
+      &:not(:first-child) {
+        margin: 34px 0 0 40px;
+      }
+      &:nth-child(3n + 1) {
+        margin: 34px 0 0;
+      }
+      &:nth-child(1) {
+        margin: 0;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin: 0 0 0 40px;
+      }
+
+      @media (max-width: 767px) {
+        &:not(:first-child) {
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.blog_details {
+  margin: 30px 0 0;
+
+  h3 {
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      height: 200px;
+    }
+  }
+
+  p {
+    &:not(:first-of-type) {
+      margin: 20px 0 0;
+
+      @media (max-width: 767px) {
+        margin: 23px 0 0;
+      }
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #6b6a6a;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 1px;
+      background: #e1e1e1;
+      margin: 0 8px 0 0;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 13px;
+    color: #3f3e3d;
+    background: transparent;
+
+    padding: 0;
+    transition: all 0.4s ease;
+
+    svg {
+      margin: 0 0 0 8px;
+
+      path {
+        fill: #3f3e3d;
+        transition: all 0.4s ease;
+      }
+    }
+
+    &:hover {
+      color: #00b806;
+      background-color: transparent;
+
+      svg {
+        path {
+          fill: #00b806;
+        }
+      }
+    }
+  }
+
+  h3,
+  img,
+  p,
+  span,
+  a {
+    margin: 30px 0 0;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'Rent Details',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/_modal-send.html')
+      @@include('components/_modal-call.html')
+      @@include('components/_modal-thanks.html')
+
+      @@include('pages/rent/_breadcrumbs-details.html')
+      @@include('pages/rent/_content-details.html')
+      @@include('pages/rent/_similar.html')
+      @@include('pages/index/_mortgage.html')
+      @@include('pages/rent/_text-details.html')
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

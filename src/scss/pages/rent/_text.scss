@@ -1,0 +1,27 @@
+.rent-text {
+  margin: 60px 0 72px;
+
+  @media (max-width: 767px) {
+    margin: 30px 0 32px;
+  }
+
+  &__content {
+    h3 {
+    }
+    p {
+      margin: 20px 0 0;
+
+      @media (max-width: 767px) {
+        margin: 21px 0 0;
+      }
+
+      &:first-of-type {
+        margin: 30px 0 0;
+
+        @media (max-width: 767px) {
+          margin: 22px 0 0;
+        }
+      }
+    }
+  }
+}
