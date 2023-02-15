@@ -434,7 +434,7 @@ const sliderSectionTeam = () => {
 const maskPhoneNumber = () => {
   if (document.querySelector('._phone-mask')) {
     const selector = document.querySelectorAll('._phone-mask')
-    ;(0,_node_modules_inputmask_dist_inputmask_es6_js__WEBPACK_IMPORTED_MODULE_2__["default"])({ mask: '+99999999999' }).mask(selector)
+    ;(0,_node_modules_inputmask_dist_inputmask_es6_js__WEBPACK_IMPORTED_MODULE_2__["default"])({ mask: '+9999999999999' }).mask(selector)
   }
 }
 

@@ -404,7 +404,7 @@ export const sliderSectionTeam = () => {
 export const maskPhoneNumber = () => {
   if (document.querySelector('._phone-mask')) {
     const selector = document.querySelectorAll('._phone-mask')
-    Inputmask({ mask: '+99999999999' }).mask(selector)
+    Inputmask({ mask: '+9999999999999' }).mask(selector)
   }
 }
 
