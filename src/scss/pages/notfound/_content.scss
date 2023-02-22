@@ -71,6 +71,10 @@
         font-size: 14px;
         line-height: 13px;
         color: #3f3e3d;
+
+        @media (max-width: 767px) {
+          text-align: center;
+        }
       }
 
       a {

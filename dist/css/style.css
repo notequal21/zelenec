@@ -235,7 +235,7 @@ h6 {
   transition: all 0.3s ease;
 }
 
-.header-body__menu ul li:hover a {
+.header-body__menu ul li:hover > a {
   color: #00b806;
 }
 
@@ -243,7 +243,7 @@ h6 {
   fill: #00b806;
 }
 
-.header-body__menu ul li._active a {
+.header-body__menu ul li._active > a {
   color: #00b806;
 }
 
@@ -1234,6 +1234,7 @@ label._input textarea {
 .advantages._second .advantages-item a._email {
   color: #00b806;
   text-decoration: underline;
+  word-break: break-all;
 }
 
 .advantages._second .advantages-item a._email:hover {
@@ -3322,6 +3323,14 @@ body._lock {
     margin: 0;
   }
 
+  .types-body__item._service .types-body__item-content {
+    overflow: auto;
+  }
+
+  .types-body__item._service .types-body__item-content .types-body__item-btns {
+    margin: 10px 0 0;
+  }
+
   .rent-info {
     flex: 0 0 340px;
   }
@@ -3985,6 +3994,10 @@ body._lock {
   .notfound-body__content span {
     font-size: 20px;
     line-height: 19px;
+  }
+
+  .notfound-body__content p {
+    text-align: center;
   }
 
   .notfound-body__content a {

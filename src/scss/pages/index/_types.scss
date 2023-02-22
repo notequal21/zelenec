@@ -29,6 +29,14 @@
         .types-body__item-content {
           padding: 44px 40px 40px;
 
+          @media (max-width: 1200px) {
+            overflow: auto;
+
+            .types-body__item-btns {
+              margin: 10px 0 0;
+            }
+          }
+
           @media (max-width: 767px) {
             padding: 30px;
           }

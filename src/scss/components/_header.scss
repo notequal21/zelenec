@@ -136,7 +136,7 @@
           }
 
           &:hover {
-            a {
+            & > a {
               color: #00b806;
             }
             svg {
@@ -147,7 +147,7 @@
           }
 
           &._active {
-            a {
+            & > a {
               color: #00b806;
             }
             svg {

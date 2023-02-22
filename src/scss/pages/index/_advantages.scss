@@ -29,6 +29,7 @@
         &._email {
           color: #00b806;
           text-decoration: underline;
+          word-break: break-all;
 
           &:hover {
             text-decoration: unset;
